@@ -1,5 +1,5 @@
 task.spawn(function()
-    repeat task.wait() until (not game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("GamemodeWait") or not game:GetService("Players").LocalPlayer.PlayerGui.GamemodeWait.Enabled) and not workspace:FindFirstChild("TrainScene")
+    repeat task.wait() print("waiting) until not game:GetService("Players").LocalPlayer.PlayerGui.GamemodeWait.Enabled
     local queue_on_teleport = queue_on_teleport or function() end
     queue_on_teleport(loadstring(game:HttpGet("https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/JujutsuInfinite"))())
 end)
