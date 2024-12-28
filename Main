@@ -1,4 +1,2 @@
-task.spawn(function()
-    repeat task.wait() print("waiting") until not game:GetService("Players").LocalPlayer.PlayerGui.GamemodeWait.Enabled
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/JujutsuInfinite"))()
-end)
+repeat wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/JujutsuInfinite"))()
